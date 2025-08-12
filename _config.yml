@@ -71,6 +71,6 @@ kramdown:
   show_warnings     : false
 
 
-theme: jekyll-theme-minimal
+theme: jekyll-theme-cayman
 title: Portefølje
 description: Portefølje 4. Semester
