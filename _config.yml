@@ -70,6 +70,6 @@ kramdown:
   footnote_nr       : 1
   show_warnings     : false
 
-theme: sidey
+theme: minima
 title: Portefølje
 description: Portefølje 4. Semester
