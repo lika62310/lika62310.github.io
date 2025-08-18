@@ -2,7 +2,7 @@ title: Portefølje
 description: Portefølje 4. Semester
 baseurl: "" 
 url: "https://lika62310.github.io"
-theme: cayman
+theme: minima
 
 collections:
   posts:
