@@ -3,9 +3,9 @@ layout: default
 title: Home
 ---
 
-# Welcome to My Site
+# Velkommen!
 
-Here are my posts:
+Alle indlæg:
 
 {% for post in site.posts %}
 - [{{ post.title }}]({{ post.url }}) — {{ post.date | date: "%B %d, %Y" }}
