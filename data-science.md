@@ -3,7 +3,7 @@ layout: default
 title: Data science
 ---
 
-<h1>Data sciencePosts</h1>
+<h1>Data science Posts</h1>
 <ul>
   {% for post in site.posts %}
     {% if post.tags contains "data-science" %}
