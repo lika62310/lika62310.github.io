@@ -1,4 +1,19 @@
-title: Minimal Jekyll Site
-markdown: kramdown
+title: Portefølje
+description: Portefølje 4. Semester
+baseurl: "" 
+url: "https://lika62310.github.io"
 theme: minima
-future: true
+
+collections:
+  posts:
+    output: true
+
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "default"
+
+plugins:
+  - jekyll-feed
