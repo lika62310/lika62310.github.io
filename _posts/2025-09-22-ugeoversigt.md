@@ -1,9 +1,8 @@
 ---
-title: "Uge 39 Oversigt"
+title: "Data Science Eksperiment #1 - Analyse af albumdata"
 date: 2025-09-22
-tags: [projekt], [cybersecurity]
+tags: [projekt, cybersecurity]
 ---
-
 22/9 + 23/9
 Aktivitet og formål: Linux Fundamentals via Hackthebox; repetetion og træning af udbredte linux-værktøjer. 
 
