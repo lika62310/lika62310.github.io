@@ -1,5 +1,5 @@
 ---
-title: "Data Science Eksperiment #1 - Analyse af albumdata"
+title: "Uge 39 - oversigt"
 date: 2025-09-22
 tags: [projekt, cybersecurity]
 ---
