@@ -1,6 +1,6 @@
 ---
 title: "Uge 39 Oversigt"
-date: 2025-08-18
+date: 2025-09-22
 tags: [projekt], [cybersecurity]
 ---
 
