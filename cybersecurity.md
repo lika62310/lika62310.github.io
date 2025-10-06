@@ -7,7 +7,7 @@ title: Cybersecurity
 <ul>
   {% for post in site.posts %}
     {% if post.tags contains "cybersecurity" %}
-      <li><h2><a href="{{ post.url }}">{{ post.title }}</a></h2> - {{ post.date | date: "%B %d, %Y" }}
+      <li><h2><a href="{{ post.url }}">{{ post.title }}</a></h2> <p><em>{{ post.date | date: "%B %d, %Y" }}</em></p>
       
 {{ post.content }}
 </li>
