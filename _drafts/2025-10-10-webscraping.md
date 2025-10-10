@@ -5,6 +5,7 @@ tags: [data-science]
 ---
 
 Mål: indsamling af data fra websider vha. biblioteker som BeautifulSoup og selenium
+Ressourcer: https://pypi.org/project/beautifulsoup4/, https://pypi.org/project/selenium/, https://www.robotstxt.org/
 
 Web scraping er en hurtig og effektiv måde at indsamle store mængder data. I python understøttes dette af flere biblioteker ...
 
@@ -48,5 +49,20 @@ I dataframen ses nu, at 'price'-kolonnen både indeholder pris og lagerstatus, h
 
 ### 4. Etik og sikkerhed
 
-De fleste sidder har en robots.txt-fil - en Robots Exclusion Protocol - som specifirerer hvilke dele af der må scrapes, hvilket user-agents, der har adgang, eventuelle crawl-delays mm. 
+De fleste sidder har en robots.txt-fil - en Robots Exclusion Protocol - som specifirerer hvilke dele af der må scrapes, hvilket user-agents, der har adgang, eventuelle crawl-delays mm. Filen er offentlig tilgængelig, hvorfor den ikke bør indeholde følsomme oplysninger. Protokollen fungerer som udgangspunkt efter et princip om frivillig compliance, men det er best practice at følge robots.txt. 
+
+Et eksempel på en robots.txt, der ikke tillader adgang:
+
+  User-agent: *
+  Disallow: /
+
+Her står stjernen (*) for alle user agents, mens / dækker alle stier. Alternativt en fil der ikke tillader adgang til specifikke sider eller fra en specifik bot:
+
+  User-agent: *
+  Disallow: /auth/
+  Disallow: /login/
+
+  User-agent: BadBot
+  Disallow: /
+
 
