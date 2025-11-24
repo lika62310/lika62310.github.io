@@ -54,8 +54,8 @@ Her ses klart, at der kommer flest to- og tremands-grupper, og at derhefter bliv
 <img width="713" height="301" alt="image" src="https://github.com/user-attachments/assets/2d1ff627-a5ec-4ca7-859b-7333b66baafa" />
 
 #### Travlhed/gruppestørrelser fordelt på tidspunkt/dag
-<img width="80%" alt="image" src="https://github.com/user-attachments/assets/261aa7a1-6c10-4714-ad47-1e2ed833ca47" />
-<img width="80%" alt="image" src="https://github.com/user-attachments/assets/de65747f-4c8a-4d70-acbe-dcc871cda006" />
+<img width="90%" alt="image" src="https://github.com/user-attachments/assets/261aa7a1-6c10-4714-ad47-1e2ed833ca47" />
+<img width="90%" alt="image" src="https://github.com/user-attachments/assets/de65747f-4c8a-4d70-acbe-dcc871cda006" />
 
 Som det sidste ses et matrix-diagram, som viser den forventede belastning over en gennemsnitlig uge. Her kan der hurtigt ses, hvilke dage og tidspunkt, hvor der er mest travlt - igen her ses der f.eks. en tendes mod travlhed omkring middag og eftermiddag, mens der de fleste dage er mindre travlt om morgenen og om aftenen (f.eks. er torsdag den eneste dag, hvor der er travlt kl. 20, hvilket igen kan bruges til planlægning eller til at bekræfte, at f.eks. quiz-arrangementer virker). 
 Skiftes visningen, ses i stedet den gennemsnitlige gruppestørrelse på samme tidspunkter, som f.eks. kan vise om større grupper er mere tilbøjelige til at dukke op på visse tidspunkter.
