@@ -8,7 +8,7 @@ En oversigt over booking- og analytics-elementer i LazyCatz-projektet.
 ### Travlhed ved booking
 Når en kunde opretter en ny booking, indikeres efter valgt dato og tid om der forventes at være travlt på dette tidspunkt, hvilket kunden kan bruge til at vælge det rette tidspunkt. Travlheden sættes (ved kald til /Booking/BusyInfo-endpointet), når både dato og tidspunkt er valgt, og opdateres dynamisk hvis en ny værdi vælges.
 
-<img width="739" height="532" alt="image" src="https://github.com/user-attachments/assets/785638e6-a2c4-461c-8397-4fe6bc1c28a9" />
+<img width="65%" alt="image" src="https://github.com/user-attachments/assets/785638e6-a2c4-461c-8397-4fe6bc1c28a9" />
 
 <img width="623" height="344" alt="image" src="https://github.com/user-attachments/assets/1e7b6ff6-ee53-4bc2-83f4-9384e3d76a3b" />
 
@@ -20,7 +20,7 @@ Grundet den typiske daglige bookingmængde i datasættet er tærsklen for travlh
 På sidens analyse-dashboard, findes en række diagrammer over tendenser relateret til caféen.
 
 #### Oversigt over udviklingen af bookinger over tid
-<img width="830" height="515" alt="image" src="https://github.com/user-attachments/assets/ffa7415a-01bf-41fd-8359-e2a6d4d39414" />
+<img width="80%" alt="image" src="https://github.com/user-attachments/assets/ffa7415a-01bf-41fd-8359-e2a6d4d39414" />
 
 Det første diagram, er et kurvediagram, som viser tendensen i bookinger over tid, vist som den som antal gæster i alt pr uge. Her kan ses, hvor vidt det går fremad eller tilbage for caféen ift. mængden af besøgende, og der kan vurderes om der er behov for evt. initiativer for at øge mængden af bookinger.
 
@@ -30,7 +30,7 @@ Det første diagram, er et kurvediagram, som viser tendensen i bookinger over ti
 For at oprette diagrammet er listen af bookinger gruperet på uge-basis (for at gøre diagrammet mere overskueligt), hvorefter det samtlede antal gæster (pr. booking) optælles, og listen sorteres efter dato, for at kunne vise udviklingen over tid. 
 
 #### Bookinger fordelt på ugedag
-<img width="889" height="547" alt="image" src="https://github.com/user-attachments/assets/3b66e241-cfbe-4751-9f32-aa69fe1cc0e9" />
+<img width="80%" alt="image" src="https://github.com/user-attachments/assets/3b66e241-cfbe-4751-9f32-aa69fe1cc0e9" />
 
 Herefter ses et søjlediragram, som viser fordelingen af antal bookinger fordelt over ugens dage, som kan give indsigt i, hvornår der kan forventes at være specielt travlt, især ift. vagtplanlægning. Herudover kan der ses, om eventuelle arrangementer (infoaftener, fredags-quiz, osv.) bidrager til at trække flere ind på de dage.
 Dataen er her grupperet efter ugedag, hvorefter den gennemsnitlige mængde gæster per. dag er udregnet og listen grupperet efter ugedag man-søn. 
@@ -54,8 +54,8 @@ Her ses klart, at der kommer flest to- og tremands-grupper, og at derhefter bliv
 <img width="713" height="301" alt="image" src="https://github.com/user-attachments/assets/2d1ff627-a5ec-4ca7-859b-7333b66baafa" />
 
 #### Travlhed/gruppestørrelser fordelt på tidspunkt/dag
-<img width="1459" height="891" alt="image" src="https://github.com/user-attachments/assets/261aa7a1-6c10-4714-ad47-1e2ed833ca47" />
-<img width="1374" height="706" alt="image" src="https://github.com/user-attachments/assets/de65747f-4c8a-4d70-acbe-dcc871cda006" />
+<img width="80%" alt="image" src="https://github.com/user-attachments/assets/261aa7a1-6c10-4714-ad47-1e2ed833ca47" />
+<img width="80%" alt="image" src="https://github.com/user-attachments/assets/de65747f-4c8a-4d70-acbe-dcc871cda006" />
 
 Som det sidste ses et matrix-diagram, som viser den forventede belastning over en gennemsnitlig uge. Her kan der hurtigt ses, hvilke dage og tidspunkt, hvor der er mest travlt - igen her ses der f.eks. en tendes mod travlhed omkring middag og eftermiddag, mens der de fleste dage er mindre travlt om morgenen og om aftenen (f.eks. er torsdag den eneste dag, hvor der er travlt kl. 20, hvilket igen kan bruges til planlægning eller til at bekræfte, at f.eks. quiz-arrangementer virker). 
 Skiftes visningen, ses i stedet den gennemsnitlige gruppestørrelse på samme tidspunkter, som f.eks. kan vise om større grupper er mere tilbøjelige til at dukke op på visse tidspunkter.
