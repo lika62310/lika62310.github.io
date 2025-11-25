@@ -63,3 +63,11 @@ h1, h2, h3 {
 a {
   color: #007acc;
 }
+
+table {
+  border-collapse: collapse;
+}
+th, td {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
