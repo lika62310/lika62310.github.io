@@ -11,25 +11,25 @@ Ressourcer: https://pandas.pydata.org/pandas-docs/stable/index.html, https://mat
 ## 1. Import af data + indledende oprydning
 
 Som det første importeres alle nødvendige biblioteker, og datasættene indlæses. Fitness-dataen er hentet fra Sunhed-appen på iOS. 
-<img width="1338" height="545" alt="image" src="https://github.com/user-attachments/assets/4b6e1ded-b12a-463c-9ad2-d6944e608ec6" />
+<img width="90%" alt="image" src="https://github.com/user-attachments/assets/4b6e1ded-b12a-463c-9ad2-d6944e608ec6" />
 Før at dataen kan bruges til at udforske problemstillingen, er vi nødt til at rydde op i dataframen - her ligger vi ud med at fjerne alle umiddelbart irrelevante kolonner, får herved et bedre overblik over datasættet:
-<img width="1224" height="345" alt="image" src="https://github.com/user-attachments/assets/3c395828-9212-49b3-8ba5-d2150af3e4d2" />
+<img width="90%" alt="image" src="https://github.com/user-attachments/assets/3c395828-9212-49b3-8ba5-d2150af3e4d2" />
 Allerede er vi tættere på, men da vi er ude efter værdier for skridt, må dataframen filtreres ned til udelukkende at indeholde rækker, hvor værdien 'type' er 'HKQuantityTypeIdentifierStepCount' - lignende kunne gøres med bl.a. HKQuantityTypeIdentifierDistanceWalkingRunning eller HKQuantityTypeIdentifierFlightsClimbed for at få afstanden eller hastigheden.
-<img width="1082" height="349" alt="image" src="https://github.com/user-attachments/assets/a0be6d27-e880-42d0-8765-b7fd8d640dd9" />
+<img width="90%" alt="image" src="https://github.com/user-attachments/assets/a0be6d27-e880-42d0-8765-b7fd8d640dd9" />
 Med dataframen nu i en brugbar udformning, kan vi med fordel også fjerne kolonnerne type og unit, som ikke længere tilbyder yderligere information, samt to af datoværdierne, her startDate og endDate. 
 
 Endelig ønsker vi at få vist antal skridt **per dag**, hvilket vi kan gøre ved at gruppere at gruppere værdierne i creationDate-kolonnen efter dato (...efter en konvertering til datetime):
 
-<img width="939" height="294" alt="image" src="https://github.com/user-attachments/assets/9943cd4d-274e-4f52-af48-8cde1bfa8129" />
+<img width="90%" alt="image" src="https://github.com/user-attachments/assets/9943cd4d-274e-4f52-af48-8cde1bfa8129" />
 
 
 ### 1.2 import af temperaturdata
 
 Al vejrdata er hentet fra DMI som CSV-filer - én for hver måned (fra vejrstation Abed, som er tættest på hvor hovedparten af skridtene er gået :)). Da vi ønsker al dataen samlet, konkatenerer vi filerne til én dataframe som de indlæses. Herudover fjernes de to tomme kolonner, og DateTime-kolonnen konverteres. 
-<img width="1370" height="449" alt="image" src="https://github.com/user-attachments/assets/e03ac7e1-e585-4cf6-8b79-7ea67b0c1e79" />
+<img width="90%" alt="image" src="https://github.com/user-attachments/assets/e03ac7e1-e585-4cf6-8b79-7ea67b0c1e79" />
 
 Som det ses, indeholder datasætten temperaturobservationer per timebasis; vi har til analysen brug for dem på dagsbasis. Her kunne man gruppere dataene efter data, som vi har gjort med skridt-dataen, og taget en gennemsnit per dag (evt. kun på dagtimer). I stedet har jeg valgt at tage alle målinger fra kl. 12, da jeg ved at det er ved dette tidspunkt der primært er blevet gået, og derfor de vejrforhold der er interessante for analysen. Dette gøres her:
-<img width="838" height="355" alt="image" src="https://github.com/user-attachments/assets/b9dcf499-93c2-414b-b349-8edb1e81445b" />
+<img width="90%" alt="image" src="https://github.com/user-attachments/assets/b9dcf499-93c2-414b-b349-8edb1e81445b" />
 
 
 ## 2. Begyndende visualisering - oversigt over skridt over tid
@@ -39,16 +39,16 @@ Før vi begynder at sammenligne de to datasæt, kunne det være interessant at s
 <img width="996" height="572" alt="image" src="https://github.com/user-attachments/assets/b268f0f2-7a34-4ae6-a7bc-6dead9a3934c" />
 Diagrammet viser store udslag i antal skridt, men foreslår dog - som forventet - en tendens mod kortere ture i de kolde måneder, og længere hen ad foråret og sommeren. 
 For at undersøge dette videre, kan vi se på det samtlige skridtantal på månedsbasis:
-<img width="809" height="353" alt="image" src="https://github.com/user-attachments/assets/72928bc8-f7bb-4a8f-a9e8-180f3d852733" />
-<img width="777" height="594" alt="image" src="https://github.com/user-attachments/assets/4c6e65d8-4b3b-4137-b3e7-fd2f9558f576" />
+<img width="90%" alt="image" src="https://github.com/user-attachments/assets/72928bc8-f7bb-4a8f-a9e8-180f3d852733" />
+<img width="90%" alt="image" src="https://github.com/user-attachments/assets/4c6e65d8-4b3b-4137-b3e7-fd2f9558f576" />
 Det skarpe fald vi ser efter august, skyldes at kun første uge af september er medtaget (af mangel på tidsrejse, da analysen er foretaget i start september :)), samt et par dage fra december 2024, hvor optællingen er opstartet. Fjerner vi disse, og medtager kunne hele måneder ser linjediagrammet således ud:
 
-<img width="1135" height="66" alt="image" src="https://github.com/user-attachments/assets/57d67f6c-308a-4d68-a1ef-ba7fc0e39c43" />
-<img width="982" height="595" alt="image" src="https://github.com/user-attachments/assets/3db96f54-0ec9-4ea1-b42f-5299571ee68a" />
+<img width="90%" alt="image" src="https://github.com/user-attachments/assets/57d67f6c-308a-4d68-a1ef-ba7fc0e39c43" />
+<img width="90%" alt="image" src="https://github.com/user-attachments/assets/3db96f54-0ec9-4ea1-b42f-5299571ee68a" />
 og bekræfter altså en stigning i løbet at året. 
 
 Foruden udviklingen, kan en fordeling af skridt per måned visualiseres ses ved hjælp af et søjlediagram:
-<img width="1014" height="666" alt="image" src="https://github.com/user-attachments/assets/7316941e-f0e1-4b8c-8af8-83441bb7186c" />
+<img width="90%" alt="image" src="https://github.com/user-attachments/assets/7316941e-f0e1-4b8c-8af8-83441bb7186c" />
 
 
 ## 3. Kombineret visualisering - er der en sammenhæng mellem vejrforhold og antal skridt gået?
@@ -60,13 +60,13 @@ For nemt at kunne sammenligne de to datasæt, samler vi dem til én dataframe me
 <img width="735" height="329" alt="image" src="https://github.com/user-attachments/assets/b9fe9b30-c818-444a-9fe7-5e45d816dac0" />
 
 Herfra kan vi nemt oprette et scatter plot:
-<img width="813" height="714" alt="image" src="https://github.com/user-attachments/assets/e6deb14a-19de-470c-b277-fbf48a5da46a" />
+<img width="90%" alt="image" src="https://github.com/user-attachments/assets/e6deb14a-19de-470c-b277-fbf48a5da46a" />
 Diagrammet ser ud til vise en svag positiv sammenhæng mellem antal skridt gået og temperaturen, som forventet. For at gøre dette klarere, vil vi gerne indsætte en regressionslinje:
 
-<img width="1180" height="687" alt="image" src="https://github.com/user-attachments/assets/70e6f31c-0d10-4b09-a778-a6ec4582a0e7" />
+<img width="90%" alt="image" src="https://github.com/user-attachments/assets/70e6f31c-0d10-4b09-a778-a6ec4582a0e7" />
 ... og vi får en fejl. Da en mulig grund til dette kunne være, at datasættet indeholder NaN-værdier et sted, er dette værd at undersøge. 
 
-<img width="1010" height="254" alt="image" src="https://github.com/user-attachments/assets/3a4233bf-1be8-4b03-841e-6aa847d31209" />
+<img width="90%" alt="image" src="https://github.com/user-attachments/assets/3a4233bf-1be8-4b03-841e-6aa847d31209" />
 Her viser et check på isnull, at der *er* NaN-værdier i en af kolonnerne, og en filtrering af disse værdier viser, at vi har tre dage uden en temperatur-værdi. Dette kunne løses på flere måder, bl.a. ved at sætte NaN-værdier til 0, eller erstattet dem med en forventet gennemsnitsværdi. I stedet vælger vi at fjerne dem, da de er jævnt fordellet over sættet, og vi har nok værdier til, at det ikke påvirker resultatet. 
 
 Med datasættet renset for NaN-værdiet, forsøger vi igen at lave en regressionslinje...
@@ -78,11 +78,11 @@ Med datasættet renset for NaN-værdiet, forsøger vi igen at lave en regression
 DMIs frie data indeholder ikke kun temperaturobservationer, men derimod en lang vifte af parametre, som der ligeledes kunne være interessante at kigge på. Herfra er der valgt vind og nedbør.
 
 Processen fra 1.2 gentages for begge af disse til indlæsning og oprydning af datasættene, hvorefter de for lethedens skyld samles (samtidig med at kolonnen 'value' omdøbes til det mere sigende 'Skridt'; herudover foretages null-tjek og oprydning, ikke vist):
-<img width="1078" height="322" alt="image" src="https://github.com/user-attachments/assets/aa5515e1-6502-4b0e-a8f0-8a66bd538f10" />
+<img width="90%" alt="image" src="https://github.com/user-attachments/assets/aa5515e1-6502-4b0e-a8f0-8a66bd538f10" />
 
 og der oprettet scatterplots for at illustrere sammenhængen:
 
-<img width="1028" height="656" alt="image" src="https://github.com/user-attachments/assets/887acbee-c0ef-418a-bdd7-c615f76762d4" />
+<img width="90%" alt="image" src="https://github.com/user-attachments/assets/887acbee-c0ef-418a-bdd7-c615f76762d4" />
 <img width="740" height="659" alt="image" src="https://github.com/user-attachments/assets/1b527da6-3039-459e-a29b-056d95ecd71c" />
 
 Diagrammet for vindhastighed ser ud til at vise en svag negativ sammenhæng (færre skridt gået ved højere vindhastigheder), mens nedbørsdiagrammet primært viser, at hovedparten af datapunkterne ligger på 0 mm. Vælger vi at fjerne disse, ser diagrammet således ud (inkl. regressionslinje):
@@ -92,7 +92,7 @@ som virker til også at vise en negativ sammenhæng, som dog kan skyldes en stø
 som *ikke* foreslår en sammenhæng mellem nedbør og antal skridt gået. Dette kan skyldes at der ikke er nogen sammenhæng, eller at datasættet er for lille til at vise den (i det det ikke har regnet de fleste af dagenene, og primært kun i små mængder). 
 
 Ift. vindhastigheden, viser indsættelsen af en regressionslinje en lille negativ sammenhæng, dog mindre end sammenhængen mellem temperatur og skridt.
-<img width="968" height="703" alt="image" src="https://github.com/user-attachments/assets/20989d31-c039-4583-8efb-8edb0b97e3f3" />
+<img width="90%" alt="image" src="https://github.com/user-attachments/assets/20989d31-c039-4583-8efb-8edb0b97e3f3" />
 
 ---
 
