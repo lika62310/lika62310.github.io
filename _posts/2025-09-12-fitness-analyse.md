@@ -96,4 +96,4 @@ Ift. vindhastigheden, viser indsættelsen af en regressionslinje en lille negati
 
 ---
 
-Udbytte: Formålet med forsøget var at kunne visualisere sammenhænge og arbejde med flere datasæt; dette er opnået, samtidig med at en større kompetence indenfor dataforberedelse og -oprydning er opnået. Herudover større fortrolighed ned python-fejlmeddelelser samt vellykket søning efter både fejlløsning og nye funktioner. 
+Udbytte: Formålet med forsøget var at kunne visualisere sammenhænge og arbejde med flere datasæt; dette er opnået, samtidig med at en større kompetence indenfor dataforberedelse og -oprydning er opnået. Herudover større fortrolighed ned python-fejlmeddelelser samt vellykket søgning efter både fejlløsning og nye funktioner. 
