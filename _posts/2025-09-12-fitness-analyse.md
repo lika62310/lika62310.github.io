@@ -67,7 +67,7 @@ Diagrammet ser ud til vise en svag positiv sammenhæng mellem antal skridt gået
 ... og vi får en fejl. Da en mulig grund til dette kunne være, at datasættet indeholder NaN-værdier et sted, er dette værd at undersøge. 
 
 <img width="90%" alt="image" src="https://github.com/user-attachments/assets/3a4233bf-1be8-4b03-841e-6aa847d31209" />
-Her viser et check på isnull, at der *er* NaN-værdier i en af kolonnerne, og en filtrering af disse værdier viser, at vi har tre dage uden en temperatur-værdi. Dette kunne løses på flere måder, bl.a. ved at sætte NaN-værdier til 0, eller erstattet dem med en forventet gennemsnitsværdi. I stedet vælger vi at fjerne dem, da de er jævnt fordellet over sættet, og vi har nok værdier til, at det ikke påvirker resultatet. 
+Her viser et check på isnull, at der *er* NaN-værdier i en af kolonnerne, og en filtrering af disse værdier viser, at vi har tre dage uden en temperatur-værdi. Dette kunne løses på flere måder, bl.a. ved at sætte NaN-værdier til 0, eller erstatte dem med en forventet gennemsnitsværdi. I stedet vælger vi at fjerne dem, da de er jævnt fordelt over sættet, og vi har nok værdier til, at det ikke påvirker resultatet. 
 
 Med datasættet renset for NaN-værdiet, forsøger vi igen at lave en regressionslinje...
 <img width="789" height="692" alt="image" src="https://github.com/user-attachments/assets/91b2d75d-c7e7-4883-a1cc-483d845fedc1" />
