@@ -27,7 +27,7 @@ Herefter har jeg itereret i gennem flere sider (år), for at samle det til én d
 Herfra er datasættet klar til brug til f.eks. analyse af navnetrends over tid el.lign.
 
 ### 2. Statisk indhold
-Med requests- BeautifulSoup-bibliotekerne kan en sides html-indhold hentes og filtreres, som ses gjort her (hvor User-Agent i headeret hjælper til, at komme forbi fejlbeskeder):
+Med requests- og BeautifulSoup-bibliotekerne kan en sides html-indhold hentes og filtreres, som ses gjort her (hvor User-Agent i headeret hjælper til, at komme forbi fejlbeskeder):
 
 <img width="751" height="468" alt="image" src="https://github.com/user-attachments/assets/ec96e9bb-5879-4d44-a153-279bb158a56e" />
 
