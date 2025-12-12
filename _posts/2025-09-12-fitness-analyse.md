@@ -41,7 +41,7 @@ Diagrammet viser store udslag i antal skridt, men foreslår dog - som forventet 
 For at undersøge dette videre, kan vi se på det samtlige skridtantal på månedsbasis:
 <img width="90%" alt="image" src="https://github.com/user-attachments/assets/72928bc8-f7bb-4a8f-a9e8-180f3d852733" />
 <img width="90%" alt="image" src="https://github.com/user-attachments/assets/4c6e65d8-4b3b-4137-b3e7-fd2f9558f576" />
-Det skarpe fald vi ser efter august, skyldes at kun første uge af september er medtaget (af mangel på tidsrejse, da analysen er foretaget i start september :)), samt et par dage fra december 2024, hvor optællingen er opstartet. Fjerner vi disse, og medtager kunne hele måneder ser linjediagrammet således ud:
+Det skarpe fald vi ser efter august, skyldes at kun første uge af september er medtaget (da analysen er foretaget i start september), samt et par dage fra december 2024, hvor optællingen er opstartet. Fjerner vi disse, og medtager kunne hele måneder ser linjediagrammet således ud:
 
 <img width="90%" alt="image" src="https://github.com/user-attachments/assets/57d67f6c-308a-4d68-a1ef-ba7fc0e39c43" />
 <img width="90%" alt="image" src="https://github.com/user-attachments/assets/3db96f54-0ec9-4ea1-b42f-5299571ee68a" />
