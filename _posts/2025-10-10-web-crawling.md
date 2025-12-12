@@ -7,7 +7,7 @@ tags: [data-science]
 Mål: indsamling af data fra websider vha. biblioteker som BeautifulSoup og selenium
 Ressourcer: https://pypi.org/project/beautifulsoup4/, https://pypi.org/project/selenium/, https://www.robotstxt.org/
 
-Web scraping er en hurtig og effektiv måde at indsamle store mængder data. I python understøttes dette af flere biblioteker ...
+Web scraping er en hurtig og effektiv måde at indsamle store mængder data. I python understøttes dette af flere biblioteker, som f.eks. BeautifulSoup og Selenium. 
 
 ### 1. Tabeller
 read_html()-funktionen i pandas-biblioteket finder samtlige tabeller på en given liste, og gemmer dem som en list af dataframes. 
